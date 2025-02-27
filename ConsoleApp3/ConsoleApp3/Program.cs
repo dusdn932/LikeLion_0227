@@ -43,14 +43,25 @@ namespace ConsoleApp3
 
         static void Main(string[] args)
         {
-            var rect = new Rectangle { Width = 5, Height = 4 };
-            /*
+            Point[] points = new Point[2];
+            points[0].X = 10;
+            points[0].Y = 10;
+            points[1].X = 20;
+            points[1].Y = 20;
+            foreach(var point in points)
+            {
+                Console.WriteLine($"Point : ({point.X}, {point.Y})");
+            }
+
+
+            /*var rect = new Rectangle { Width = 5, Height = 4 };
+            
              //다른방법
              Rectangle rect;
             rect.Width = 10;
             rect.Height = 20;
-             */
-            Console.WriteLine($"Area: {rect.GetArea()}");
+             
+            Console.WriteLine($"Area: {rect.GetArea()}");*/
 
             /*Point p; //구조체 선언(초기화 필요)
             p.X = 10;
